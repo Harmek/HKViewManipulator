@@ -1,5 +1,5 @@
 //
-//  main.m
+//  HKTranslationConstrain.h
 //  HKViewManipulator
 //
 //  Copyright (c) 2012-2013, Panos Baroudjian.
@@ -27,13 +27,22 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
-#import "HKAppDelegate.h"
+@interface HKTranslationConstraint : NSObject
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([HKAppDelegate class]));
-    }
-}
+- (id)initWithAxis:(CGPoint)anAxis
+   minimumDistance:(CGFloat)min
+andMaximumDistance:(CGFloat)max;
+- (BOOL)canOrNeedsToBeAligned:(CGPoint)position;
+- (CGAffineTransform)applyAxisConstrainOnTransform:(CGAffineTransform)transform
+                                    andTranslation:(CGPoint)translation;
+- (CGAffineTransform)applyLengthConstrainOnTransform:(CGAffineTransform)transform
+                                      andTranslation:(CGPoint)translation;
+
+@property (nonatomic, assign) CGPoint   axis;
+@property (nonatomic, assign) CGFloat   minDist;
+@property (nonatomic, assign) CGFloat   maxDist;
+
+@end

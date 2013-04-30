@@ -16,6 +16,14 @@
 		5059C28117305BCA0039345C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5059C28017305BCA0039345C /* Default.png */; };
 		5059C28317305BCA0039345C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5059C28217305BCA0039345C /* Default@2x.png */; };
 		5059C28517305BCA0039345C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5059C28417305BCA0039345C /* Default-568h@2x.png */; };
+		5059C29517305BE20039345C /* HKRotationConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5059C28C17305BE20039345C /* HKRotationConstraint.m */; };
+		5059C29617305BE20039345C /* HKScalingConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5059C28E17305BE20039345C /* HKScalingConstraint.m */; };
+		5059C29717305BE20039345C /* HKTranslationConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 5059C29017305BE20039345C /* HKTranslationConstraint.m */; };
+		5059C29817305BE20039345C /* HKViewManipulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5059C29217305BE20039345C /* HKViewManipulator.m */; };
+		5059C29917305BE20039345C /* MathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5059C29417305BE20039345C /* MathHelper.m */; };
+		5059C29D17305BF60039345C /* HKViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5059C29A17305BF60039345C /* HKViewController.xib */; };
+		5059C29E17305BF60039345C /* HKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5059C29C17305BF60039345C /* HKViewController.m */; };
+		5059C2A617305F830039345C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5059C2A517305F830039345C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +40,20 @@
 		5059C28017305BCA0039345C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5059C28217305BCA0039345C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5059C28417305BCA0039345C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		5059C28B17305BE20039345C /* HKRotationConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKRotationConstraint.h; sourceTree = "<group>"; };
+		5059C28C17305BE20039345C /* HKRotationConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKRotationConstraint.m; sourceTree = "<group>"; };
+		5059C28D17305BE20039345C /* HKScalingConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKScalingConstraint.h; sourceTree = "<group>"; };
+		5059C28E17305BE20039345C /* HKScalingConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKScalingConstraint.m; sourceTree = "<group>"; };
+		5059C28F17305BE20039345C /* HKTranslationConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKTranslationConstraint.h; sourceTree = "<group>"; };
+		5059C29017305BE20039345C /* HKTranslationConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKTranslationConstraint.m; sourceTree = "<group>"; };
+		5059C29117305BE20039345C /* HKViewManipulator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewManipulator.h; sourceTree = "<group>"; };
+		5059C29217305BE20039345C /* HKViewManipulator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewManipulator.m; sourceTree = "<group>"; };
+		5059C29317305BE20039345C /* MathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathHelper.h; sourceTree = "<group>"; };
+		5059C29417305BE20039345C /* MathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathHelper.m; sourceTree = "<group>"; };
+		5059C29A17305BF60039345C /* HKViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKViewController.xib; sourceTree = "<group>"; };
+		5059C29B17305BF60039345C /* HKViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKViewController.h; sourceTree = "<group>"; };
+		5059C29C17305BF60039345C /* HKViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKViewController.m; sourceTree = "<group>"; };
+		5059C2A517305F830039345C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5059C2A617305F830039345C /* QuartzCore.framework in Frameworks */,
 				5059C26F17305BCA0039345C /* UIKit.framework in Frameworks */,
 				5059C27117305BCA0039345C /* Foundation.framework in Frameworks */,
 				5059C27317305BCA0039345C /* CoreGraphics.framework in Frameworks */,
@@ -68,6 +91,7 @@
 		5059C26D17305BCA0039345C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5059C2A517305F830039345C /* QuartzCore.framework */,
 				5059C26E17305BCA0039345C /* UIKit.framework */,
 				5059C27017305BCA0039345C /* Foundation.framework */,
 				5059C27217305BCA0039345C /* CoreGraphics.framework */,
@@ -78,8 +102,16 @@
 		5059C27417305BCA0039345C /* HKViewManipulator */ = {
 			isa = PBXGroup;
 			children = (
+				5059C2A017305CC80039345C /* Constraints */,
+				5059C29117305BE20039345C /* HKViewManipulator.h */,
+				5059C29217305BE20039345C /* HKViewManipulator.m */,
+				5059C29317305BE20039345C /* MathHelper.h */,
+				5059C29417305BE20039345C /* MathHelper.m */,
 				5059C27D17305BCA0039345C /* HKAppDelegate.h */,
 				5059C27E17305BCA0039345C /* HKAppDelegate.m */,
+				5059C29A17305BF60039345C /* HKViewController.xib */,
+				5059C29B17305BF60039345C /* HKViewController.h */,
+				5059C29C17305BF60039345C /* HKViewController.m */,
 				5059C27517305BCA0039345C /* Supporting Files */,
 			);
 			path = HKViewManipulator;
@@ -97,6 +129,19 @@
 				5059C28417305BCA0039345C /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5059C2A017305CC80039345C /* Constraints */ = {
+			isa = PBXGroup;
+			children = (
+				5059C28B17305BE20039345C /* HKRotationConstraint.h */,
+				5059C28C17305BE20039345C /* HKRotationConstraint.m */,
+				5059C28D17305BE20039345C /* HKScalingConstraint.h */,
+				5059C28E17305BE20039345C /* HKScalingConstraint.m */,
+				5059C28F17305BE20039345C /* HKTranslationConstraint.h */,
+				5059C29017305BE20039345C /* HKTranslationConstraint.m */,
+			);
+			name = Constraints;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +200,7 @@
 				5059C28117305BCA0039345C /* Default.png in Resources */,
 				5059C28317305BCA0039345C /* Default@2x.png in Resources */,
 				5059C28517305BCA0039345C /* Default-568h@2x.png in Resources */,
+				5059C29D17305BF60039345C /* HKViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +213,12 @@
 			files = (
 				5059C27B17305BCA0039345C /* main.m in Sources */,
 				5059C27F17305BCA0039345C /* HKAppDelegate.m in Sources */,
+				5059C29517305BE20039345C /* HKRotationConstraint.m in Sources */,
+				5059C29617305BE20039345C /* HKScalingConstraint.m in Sources */,
+				5059C29717305BE20039345C /* HKTranslationConstraint.m in Sources */,
+				5059C29817305BE20039345C /* HKViewManipulator.m in Sources */,
+				5059C29917305BE20039345C /* MathHelper.m in Sources */,
+				5059C29E17305BF60039345C /* HKViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

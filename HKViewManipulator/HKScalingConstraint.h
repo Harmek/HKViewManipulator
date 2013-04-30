@@ -1,5 +1,5 @@
 //
-//  main.m
+//  HKScaleConstrain.h
 //  HKViewManipulator
 //
 //  Copyright (c) 2012-2013, Panos Baroudjian.
@@ -27,13 +27,18 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
-#import "HKAppDelegate.h"
+@interface HKScalingConstraint : NSObject
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([HKAppDelegate class]));
-    }
-}
+- (id)initWithMinimumScale:(CGFloat)aMinScale
+           andMaximumScale:(CGFloat)aMaxScale;
+- (BOOL)respectsConstraint:(CGFloat)scale;
+- (CGAffineTransform)applyConstrainOnTransform:(CGAffineTransform)transform
+                                      andScale:(CGFloat)scale;
+
+@property (nonatomic, assign) CGFloat   minScale;
+@property (nonatomic, assign) CGFloat   maxScale;
+
+@end

@@ -1,5 +1,5 @@
 //
-//  main.m
+//  MathHelper.h
 //  HKViewManipulator
 //
 //  Copyright (c) 2012-2013, Panos Baroudjian.
@@ -27,13 +27,21 @@
 //  ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
 //  POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreGraphics/CoreGraphics.h>
 
-#import "HKAppDelegate.h"
+static const CGFloat    HK_TWO_PI   = 2 * M_PI;
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([HKAppDelegate class]));
-    }
-}
+@interface MathHelper : NSObject
+
++ (CGFloat)normalizeAngle:(CGFloat)angle;
++ (CGFloat)getAngle:(CGAffineTransform)transform;
++ (CGFloat)getScaleX:(CGAffineTransform)transform;
++ (CGFloat)getScaleY:(CGAffineTransform)transform;
++ (CGFloat)getLength:(CGPoint)point;
++ (CGFloat)dotBetween:(CGPoint)a and:(CGPoint)b;
++ (CGPoint)normalize:(CGPoint)v;
++ (CGAffineTransform)recomposeMatrixWithScale:(CGFloat)scale
+                                     andAngle:(CGFloat)angle
+                               andTranslation:(CGPoint)translation;
+@end

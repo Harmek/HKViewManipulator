@@ -1,5 +1,5 @@
 //
-//  main.m
+//  HKViewController.h
 //  HKViewManipulator
 //
 //  Copyright (c) 2012-2013, Panos Baroudjian.
@@ -28,12 +28,12 @@
 //  POSSIBILITY OF SUCH DAMAGE.
 
 #import <UIKit/UIKit.h>
+#import "../../HKViewManipulator/HKViewManipulator/HKViewManipulator.h"
 
-#import "HKAppDelegate.h"
+@interface HKViewController : UIViewController<HKViewManipulatorDelegate>
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([HKAppDelegate class]));
-    }
-}
+@property (strong, nonatomic) IBOutlet UIView *redView;
+@property (strong, nonatomic) IBOutlet UIView *blueView;
+@property (strong, nonatomic) HKViewManipulator *redViewManipulator;
+@property (strong, nonatomic) HKViewManipulator *blueViewManipulator;
+@end
